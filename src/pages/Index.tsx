@@ -1,10 +1,10 @@
-
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import LocationsTab from "@/components/LocationsTab"
 import NPCTab from "@/components/NPCTab"
 import QuestsTab from "@/components/QuestsTab"
 import MonstersTab from "@/components/MonstersTab"
+import CampaignPDF from "@/components/CampaignPDF"
 
 const Index = () => {
   return (
@@ -42,6 +42,9 @@ const Index = () => {
             </TabsTrigger>
             <TabsTrigger value="notes" className="data-[state=active]:bg-[#8c6142] hover:bg-[#6d4a34]">
               Notes
+            </TabsTrigger>
+            <TabsTrigger value="pdf" className="data-[state=active]:bg-[#8c6142] hover:bg-[#6d4a34]">
+              Manuel
             </TabsTrigger>
           </TabsList>
 
@@ -91,6 +94,10 @@ const Index = () => {
                 <CardTitle>Notes de campagne</CardTitle>
               </CardHeader>
             </Card>
+          </TabsContent>
+
+          <TabsContent value="pdf" className="mt-4">
+            <CampaignPDF />
           </TabsContent>
         </Tabs>
       </main>
