@@ -5,7 +5,6 @@ import NPCTab from "@/components/NPCTab"
 import QuestsTab from "@/components/QuestsTab"
 import MonstersTab from "@/components/MonstersTab"
 import CampaignPDF from "@/components/CampaignPDF"
-import DiceRoller from "@/components/DiceRoller"
 
 const Index = () => {
   return (
@@ -78,9 +77,6 @@ const Index = () => {
               <CardHeader>
                 <CardTitle>Lanceur de dés</CardTitle>
               </CardHeader>
-              <div className="p-6">
-                <DiceRoller />
-              </div>
             </Card>
           </TabsContent>
 
