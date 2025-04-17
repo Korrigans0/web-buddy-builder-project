@@ -1,6 +1,10 @@
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Card, CardHeader, CardTitle } from "@/components/ui/card"
+import LocationsTab from "@/components/LocationsTab"
+import NPCTab from "@/components/NPCTab"
+import QuestsTab from "@/components/QuestsTab"
+import MonstersTab from "@/components/MonstersTab"
 
 const Index = () => {
   return (
@@ -49,14 +53,45 @@ const Index = () => {
             </Card>
           </TabsContent>
 
-          {/* Placeholder tabs content */}
-          <TabsContent value="lieux">Contenu des lieux</TabsContent>
-          <TabsContent value="pnj">Contenu des PNJ</TabsContent>
-          <TabsContent value="quetes">Contenu des quêtes</TabsContent>
-          <TabsContent value="monstres">Contenu des monstres</TabsContent>
-          <TabsContent value="des">Contenu des dés</TabsContent>
-          <TabsContent value="combat">Contenu du combat</TabsContent>
-          <TabsContent value="notes">Contenu des notes</TabsContent>
+          <TabsContent value="lieux" className="mt-4">
+            <LocationsTab />
+          </TabsContent>
+
+          <TabsContent value="pnj" className="mt-4">
+            <NPCTab />
+          </TabsContent>
+
+          <TabsContent value="quetes" className="mt-4">
+            <QuestsTab />
+          </TabsContent>
+
+          <TabsContent value="monstres" className="mt-4">
+            <MonstersTab />
+          </TabsContent>
+
+          <TabsContent value="des" className="mt-4">
+            <Card>
+              <CardHeader>
+                <CardTitle>Lanceur de dés</CardTitle>
+              </CardHeader>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="combat" className="mt-4">
+            <Card>
+              <CardHeader>
+                <CardTitle>Gestionnaire de combat</CardTitle>
+              </CardHeader>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="notes" className="mt-4">
+            <Card>
+              <CardHeader>
+                <CardTitle>Notes de campagne</CardTitle>
+              </CardHeader>
+            </Card>
+          </TabsContent>
         </Tabs>
       </main>
     </div>
