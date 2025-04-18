@@ -1,10 +1,12 @@
+
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
-import { Card, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import LocationsTab from "@/components/LocationsTab"
 import NPCTab from "@/components/NPCTab"
 import QuestsTab from "@/components/QuestsTab"
 import MonstersTab from "@/components/MonstersTab"
 import CampaignPDF from "@/components/CampaignPDF"
+import DiceRoller from "@/components/DiceRoller"
 
 const Index = () => {
   return (
@@ -77,6 +79,9 @@ const Index = () => {
               <CardHeader>
                 <CardTitle>Lanceur de dés</CardTitle>
               </CardHeader>
+              <CardContent>
+                <DiceRoller />
+              </CardContent>
             </Card>
           </TabsContent>
 
