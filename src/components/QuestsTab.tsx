@@ -34,25 +34,38 @@ const QuestsTab = () => {
 
       <Card>
         <CardHeader>
-          <CardTitle>Quêtes Secondaires</CardTitle>
+          <CardTitle>Quêtes Annexes</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
             <div>
-              <h4 className="font-semibold text-lg">Les Redbrands</h4>
-              <p className="italic mb-2">Donnée par : Les habitants de Phandalin</p>
+              <h4 className="font-semibold text-lg">Le Silence d'Agatha</h4>
+              <p className="italic mb-2">Donnée par : Sœur Garaele</p>
+              <p>Niveau conseillé : 2-3</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Éliminer la menace des Redbrands</li>
-                <li>Confronter leur chef, Glasstaff</li>
-                <li>Récompense : 200 pièces d'or</li>
+                <li>Trouver la banshee Agatha et gagner sa confiance</li>
+                <li>Défi : Interaction sociale + rôleplay</li>
+                <li>Récompense : Potions, infos secrètes, objet magique mineur</li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-lg">L'Agitation à Wyvern Tor</h4>
-              <p className="italic mb-2">Donnée par : Harbin Wester</p>
+              <h4 className="font-semibold text-lg">La Main qui Tisse</h4>
+              <p className="italic mb-2">Donnée par : Tilda l'herboriste</p>
+              <p>Niveau conseillé : 2+</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Éliminer les orcs près de Wyvern Tor</li>
-                <li>Récompense : 100 pièces d'or</li>
+                <li>Explorer les serres infestées de Tresendar Manor</li>
+                <li>Défi : Exploration + combat contre araignées</li>
+                <li>Récompense : Anneau de protection + ingrédient rare</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">Le Poids du Passé</h4>
+              <p className="italic mb-2">Donnée par : Daran Edermath</p>
+              <p>Niveau conseillé : 3</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Retrouver un ancien compagnon d'armes disparu</li>
+                <li>Défi : Combat + énigme dans un tombeau effondré</li>
+                <li>Récompense : Arme magique familiale</li>
               </ul>
             </div>
           </div>
