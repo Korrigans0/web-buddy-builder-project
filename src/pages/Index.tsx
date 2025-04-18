@@ -1,4 +1,3 @@
-
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import LocationsTab from "@/components/LocationsTab"
@@ -7,6 +6,7 @@ import QuestsTab from "@/components/QuestsTab"
 import MonstersTab from "@/components/MonstersTab"
 import CampaignPDF from "@/components/CampaignPDF"
 import DiceRoller from "@/components/DiceRoller"
+import InteractiveMap from "@/components/InteractiveMap"
 
 const Index = () => {
   return (
@@ -55,6 +55,9 @@ const Index = () => {
               <CardHeader>
                 <CardTitle>Carte interactive</CardTitle>
               </CardHeader>
+              <CardContent>
+                <InteractiveMap />
+              </CardContent>
             </Card>
           </TabsContent>
 
